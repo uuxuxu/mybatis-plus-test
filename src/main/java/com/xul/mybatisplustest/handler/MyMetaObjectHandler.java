@@ -21,6 +21,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         this.strictInsertFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now());
     }
 
+
     @Override
     public void updateFill(MetaObject metaObject) {
         // 实现对业务的填充
