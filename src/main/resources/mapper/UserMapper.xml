@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xul.mybatisplustest.mapper.UserMapper">
+
+    <select id="getSelectByName" resultType="com.xul.mybatisplustest.entity.User">
+        select * from user where name = #{name}
+    </select>
+    <select id="getSelectPage" resultType="com.xul.mybatisplustest.entity.User">
+        select id,name,age,email,create_time createTime,update_time updateTime,is_deleted deleted from mybatis_plus_test.user where age > #{age}
+    </select>
+
+</mapper>
