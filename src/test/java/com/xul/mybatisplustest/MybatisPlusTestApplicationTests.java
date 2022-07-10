@@ -256,4 +256,14 @@ class MybatisPlusTestApplicationTests {
         users.forEach(System.out::println);
     }
 
+    @Test
+    public void test(){
+        String a = null;
+        if(a == "1"){
+            System.out.println('1');
+        }else {
+            System.out.println('2');
+        }
+    }
+
 }
